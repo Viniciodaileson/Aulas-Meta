@@ -1,100 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <style>
-        th{
-            background-color: rgb(130, 141, 238);
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechHight - Loja de Informática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        th {
+            background-color: rgb(130, 141, 238);
+            color: white;
+            padding: 8px;
+        }
+
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .produto-secao {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    <a id="inicio"></a>
 
-  <h1>TechHight</h1>
-    <h2>Bem Vindo ao seu futuro </h2>
-    <h5>
-        Conectando você ao futuro. Explore nossa linha completa de informática com as melhores condições do mercado. Viva a experiência da tecnologia sem complicações.
-    </h5>
-    <br>
-    <a href="">Início</a>
-    <br>
+    <header id="inicio">
+        <h1>TechHight</h1>
+        <h2>Bem-vindo ao seu futuro</h2>
+        <p>Conectando você ao futuro. Explore nossa linha completa de informática com as melhores condições do mercado.
+            Viva a experiência da tecnologia sem complicações.</p>
+        <nav>
+            <a href="#inicio">Início</a>
+        </nav>
+    </header>
 
-    <img src="Img/tech.jpg" alt="Cidade"width="450">
-    <br>
-    
-    <h3>Mouse Gamer</h3>
-     <br>
-     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM9R-TWfNfJIG1uU14NaCmh8vw1Adz5FIS-4tjBqd01Q&s=10" alt="400">
-    <br>
-    <h4>Este é o seu melhor amigo no FPS!</h4>
-     <br>
-     <h3>Teclado Gamer</h3>
-     <br>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAelYybjwM5DFMg5VHx1U19TDVhXiDI3rnawwXoKMjv55QkKYXnrq3XgeP&s=10" alt="400">
-    <br>
-    <h4> Iluminado para te ajudar nas noites! </h4>
-    <br>
-    <h3>Headset</h3>
-    <br>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5TCKcTMnWicKqHPDAW9lloZUSxdnwn9VAmK0xbs49MXlaSzkLOq2Fd8A&s=10" alt="400">
-    <br>
-    <h4>Para Ouvir cada passo do seu jogo. </h4>
+    <main>
+        <section class="banner">
+            <img src="Img/tech.jpg" alt="Cidade tecnológica iluminada" width="450">
+        </section>
 
-    <table border="2">
-        <tr>
-            <th>Produto</th>
-            <th>Preço</th>
-            <th>Quantidade</th>
-            <th>Categoria</th>
-            <th>Validade</th>
+        <section class="produtos">
+            <div class="produto-secao">
+                <h3>Mouse Gamer</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM9R-TWfNfJIG1uU14NaCmh8vw1Adz5FIS-4tjBqd01Q&s=10"
+                    alt="Mouse Gamer RGB" width="400">
+                <h4>Este é o seu melhor amigo no FPS!</h4>
+            </div>
 
-        </tr>
-        <tr>
-        <td>Mouse</td>
-        <td>R$ 5.00</td>
-        <td>35.00</td>
-        <td>Gamer</td>
-        <td>Sem Validade</td>
-        </tr>
+            <div class="produto-secao">
+                <h3>Teclado Gamer</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAelYybjwM5DFMg5VHx1U19TDVhXiDI3rnawwXoKMjv55QkKYXnrq3XgeP&s=10"
+                    alt="Teclado Mecânico Gamer Iluminado" width="400">
+                <h4>Iluminado para te ajudar nas noites!</h4>
+            </div>
 
-        <tr>
-            <td>Teclado</td>
-            <td>R$ 89.00</td>
-            <td>50</td>
-            <td>Mecanico</td>
-            <td>Eterno</td>
-        </tr>
+            <div class="produto-secao">
+                <h3>Headset</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5TCKcTMnWicKqHPDAW9lloZUSxdnwn9VAmK0xbs49MXlaSzkLOq2Fd8A&s=10"
+                    alt="Headset Gamer Preto" width="400">
+                <h4>Para ouvir cada passo do seu jogo.</h4>
+            </div>
+        </section>
 
-        <tr>
-            <td>Headset</td>
-            <td>R$ 109.90</td>
-            <td>50</td>
-            <td>intraoriculas</td>
-            <td>Sem Validade</td>
-        </tr>
-    </table>
+        <section class="inventario">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Categoria</th>
+                        <th>Garantia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>R$ 54,90</td>
+                        <td>35</td>
+                        <td>Gamer</td>
+                        <td>12 meses</td>
+                    </tr>
+                    <tr>
+                        <td>Teclado</td>
+                        <td>R$ 89,00</td>
+                        <td>50</td>
+                        <td>Mecânico</td>
+                        <td>12 meses</td>
+                    </tr>
+                    <tr>
+                        <td>Headset</td>
+                        <td>R$ 109,90</td>
+                        <td>50</td>
+                        <td>Intra-auricular</td>
+                        <td>12 meses</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="midia">
+            <h3>Conheça um pouco de nossa loja</h3>
+            <video width="400" height="360" controls src="video/video.mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <br><br>
+            <audio controls src="testedesom.mp3">
+                Seu navegador não suporta a tag de áudio.
+            </audio>
+        </section>
+    </main>
+
+    <h3> Faça seu cadastro conosco</h3>
+
+    <form action="">
+
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+        <br>
+
+        <label for="Email">Email: </label>
+        <input type="email" name="email" id="E-mail" placeholder="Digite o seu Email" required>
+        <br>
+
+        <label for="senha">senha: </label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+
+        <br>
+
+        <label for="nasc">Data de Nascimento: </label>
+        <input type="date" name="nasc" id="nasc" required>
+
+        <p>Turno</p>
+        <input type="radio" name="turno" id="manha" value="manha">
+        <label for="manha">Manha</label>
+        <br>
+
+        <input type="radio" name="turno" id="Tarde" value="Tarde">
+        <label for="radio">Tarde</label>
+
+        <br>
+
+        <label for="cidade">Cidade</label>
+        <br>
+        <select name="cidade" id="cidade">
+
+            <option value="">Selecione</option>
+            <option value="bh">Belo Horizonte</option>
+            <option value="contagem">Contagem</option>
+            <option value="betim">Betim</option>
+        </select>
+        <br><br>
+        <input type="file" name="arquivo" id="arquivo">
+        <br><br>
+
+        <input type="color" name="" id="">
+        <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
 
 
-    <h3>Conheça um pouco de nossa loja</h3>
-    <br><br><br>
-    <video width="400" height="360" controls 
-    src="video/video.mp4">Conheça Aqui</video>
-
-<br><br>
-    
-    <audio controls src="testedesom.mp3">
-        musica
-    </audio>
-<br><br><br>
-<h3>Nosso contato </h3>
-<h4>Telefone : 9999-9999</h4>
-<h4>Email : gmail@gmail.com</h4>
-<h4>Endereço : Rua da agua N.: 1200</h4>
-
-    <a href="#inicio">Voltar ao topo</a>
+    <footer>
+        <h3>Nosso contato</h3>
+        <p><strong>Telefone:</strong> (11) 9999-9999</p>
+        <p><strong>Email:</strong> contato@techhight.com</p>
+        <p><strong>Endereço:</strong> Rua da Água, Nº 1200</p>
+        <a href="#inicio">Voltar ao topo</a>
+    </footer>
 
 </body>
+
 </html>
