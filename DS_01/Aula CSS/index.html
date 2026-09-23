@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Aluno</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meta Escola</h1>
+        <p>Cadastro de Alunos</p>
+    </header>
+
+    <main>
+
+        <section class="cadastro">
+
+            <h2>Crie sua conta</h2>
+
+            <p class="descricao">
+                Preencha os dados abaixo para realizar seu cadastro
+            </p>
+
+            <form>
+
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+                <label for="curso">Curso</label>
+                <select id="curso" name="curso">
+                    <option value="">Selecione um curso</option>
+                    <option value="desenvolvimento">Desenvolvimento de sistemas</option>
+                    <option value="enfermagem">Enfermagem</option>
+                    <option value="montagem">Montagem e Manutenção de Computadores</option>
+                    <option value="redes">Redes de Computadores</option>
+                    <option value="seguranca">Segurança da Informação</option>
+                    <option value="seguranca-do-trabalho">Segurança do Trabalho</option>
+                </select>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+                <label for="confirmar-senha">
+                    Confirmar senha
+                </label>
+
+                <input type="password" id="confirmar-senha" name="confirmar-senha"
+                    placeholder="Digite novamente sua senha">
+
+                <button type="submit">
+                    Cadastrar
+                </button>
+
+            </form>
+
+            <p class="login">
+                Já possui uma conta?
+                <a href="#">Entrar</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vinicio Daileson - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
