@@ -1,0 +1,105 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #222;
+  margin: 5;
+}
+
+
+.tarja {
+  background-color: rgb(3, 65, 199);
+  padding: 20px;
+  text-align: center;
+}
+
+
+.portal {
+  color: white;
+  font-size: 36px;
+  margin: 0 0 8px 0;
+}
+
+.categoria {
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.pagina {
+  width: 700px;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.titulo {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.subtitulo {
+  color: #555;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+
+.autor {
+  font-size: 14px;
+  color: #777;
+}
+
+
+.imagem {
+  width: 100%;
+  margin: 15px 0;
+}
+
+
+.texto {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.secao {
+  color: #c00;
+  border-bottom: 2px solid #c00;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+
+.lista {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.lista li {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+.destaque {
+  border-left: 5px solid #c00;
+  background-color: #fbeaea;
+  padding: 15px;
+  font-size: 20px;
+  font-style: italic;
+  margin: 25px 0;
+}
+
+
+.leia-mais {
+  color: #c00;
+  text-decoration: none;
+}
+
+.leia-mais:hover {
+  color: #900;
+  text-decoration: underline;
+}
