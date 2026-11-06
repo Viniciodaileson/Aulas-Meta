@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--
+  Projeto: CineMatrix — Catálogo de Filmes
+  Aula: HTML semântico + CSS (Grid, Flexbox, variáveis CSS e responsividade).
+  Cartazes e fotos ficam na mesma pasta deste arquivo.
+-->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de filmes com sinopse, informações e elenco (projeto de HTML e CSS).">
+
+    <title>CineMatrix — Catálogo de Filmes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menu fixo com atalhos para cada filme -->
+    <nav class="menu-navegacao" aria-label="Navegação entre os filmes">
+        <a href="#interestelar">Interestelar</a>
+        <a href="#duna">Duna: Parte Dois</a>
+        <a href="#origem">A Origem</a>
+    </nav>
+
+    <main class="galeria-filmes">
+
+        <!-- ================================================================
+             FILME 1 — INTERESTELAR
+             ================================================================ -->
+        <article id="interestelar" class="card-principal">
+
+            <header class="cabecalho">
+                <h1>Interestelar</h1>
+                <p class="subtitulo">O amor é a ponte através do tempo e do espaço.</p>
+            </header>
+
+            <div class="conteudo-layout">
+
+                <!-- Coluna da esquerda: cartaz + botão do trailer -->
+                <div class="coluna-esquerda">
+                    <img class="poster" src="poster.jpg" alt="Pôster do filme Interestelar">
+                    <a class="botao-trailer" href="https://www.youtube.com/results?search_query=trailer+interestelar"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                        Ver trailer
+                    </a>
+                </div>
+
+                <!-- Coluna da direita: sinopse, informações e elenco -->
+                <div class="coluna-direita">
+
+                    <section class="secao">
+                        <h2>Sinopse</h2>
+                        <p>
+                            Em um futuro em que a Terra enfrenta problemas ambientais e a humanidade
+                            corre risco de desaparecer, um grupo de astronautas parte em uma missão
+                            além do sistema solar em busca de um novo lugar para a humanidade viver.
+                        </p>
+                    </section>
+
+                    <section class="grid-informacoes" aria-label="Informações do filme">
+                        <div class="info-item">
+                            <strong>Gênero</strong>
+                            <p>Ficção / Drama</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Ano</strong>
+                            <p>2014</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Duração</strong>
+                            <p>2h 49min</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Nota</strong>
+                            <p>9.8 / 10</p>
+                        </div>
+                    </section>
+
+                    <section class="secao">
+                        <h2>Elenco principal</h2>
+                        <ul class="lista-elenco">
+                            <li>
+                                <img class="elenco-foto" src="elenco1.jpg" alt="Matthew McConaughey">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">M. McConaughey</p>
+                                    <span class="elenco-personagem">Cooper</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="elenco-foto" src="elenco2.jpg" alt="Anne Hathaway">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">Anne Hathaway</p>
+                                    <span class="elenco-personagem">Amelia Brand</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="elenco-foto" src="elenco3.jpg" alt="Jessica Chastain">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">Jessica Chastain</p>
+                                    <span class="elenco-personagem">Murph</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="elenco-foto" src="elenco4.jpg" alt="Michael Caine">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">Michael Caine</p>
+                                    <span class="elenco-personagem">Prof. Brand</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+        </article>
+
+        <!-- ================================================================
+             FILME 2 — DUNA: PARTE DOIS
+             ================================================================ -->
+        <article id="duna" class="card-principal">
+
+            <header class="cabecalho">
+                <h1>Duna: Parte Dois</h1>
+                <p class="subtitulo">A jornada mítica de um herói em busca de vingança e poder.</p>
+            </header>
+
+            <div class="conteudo-layout">
+
+                <div class="coluna-esquerda">
+                    <img class="poster" src="posterduna.jpg" alt="Pôster do filme Duna: Parte Dois">
+                    <a class="botao-trailer" href="https://www.youtube.com/results?search_query=trailer+duna+parte+dois"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                        Ver trailer
+                    </a>
+                </div>
+
+                <div class="coluna-direita">
+
+                    <section class="secao">
+                        <h2>Sinopse</h2>
+                        <p>
+                            Paul Atreides se une a Chani e aos Fremen em uma guerra de vingança contra os
+                            conspiradores que destruíram sua família, esforçando-se para evitar um futuro
+                            terrível que só ele pode prever.
+                        </p>
+                    </section>
+
+                    <section class="grid-informacoes" aria-label="Informações do filme">
+                        <div class="info-item">
+                            <strong>Gênero</strong>
+                            <p>Ficção / Aventura</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Ano</strong>
+                            <p>2024</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Duração</strong>
+                            <p>2h 46min</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Nota</strong>
+                            <p>9.5 / 10</p>
+                        </div>
+                    </section>
+
+                    <section class="secao">
+                        <h2>Elenco principal</h2>
+                        <ul class="lista-elenco">
+                            <li>
+                                <img class="elenco-foto" src="sem-foto.svg" alt="Foto indisponível de Timothée Chalamet">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">Timothée Chalamet</p>
+                                    <span class="elenco-personagem">Paul Atreides</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="elenco-foto" src="sem-foto.svg" alt="Foto indisponível de Zendaya">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">Zendaya</p>
+                                    <span class="elenco-personagem">Chani</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="elenco-foto" src="sem-foto.svg" alt="Foto indisponível de Rebecca Ferguson">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">Rebecca Ferguson</p>
+                                    <span class="elenco-personagem">Lady Jessica</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="elenco-foto" src="sem-foto.svg" alt="Foto indisponível de Austin Butler">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">Austin Butler</p>
+                                    <span class="elenco-personagem">Feyd-Rautha</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+        </article>
+
+        <!-- ================================================================
+             FILME 3 — A ORIGEM
+             ================================================================ -->
+        <article id="origem" class="card-principal">
+
+            <header class="cabecalho">
+                <h1>A Origem</h1>
+                <p class="subtitulo">A sua mente é o cenário do crime.</p>
+            </header>
+
+            <div class="conteudo-layout">
+
+                <div class="coluna-esquerda">
+                    <img class="poster" src="sem-foto.svg" alt="Pôster indisponível do filme A Origem">
+                    <a class="botao-trailer" href="https://www.youtube.com/results?search_query=trailer+a+origem"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                        Ver trailer
+                    </a>
+                </div>
+
+                <div class="coluna-direita">
+
+                    <section class="secao">
+                        <h2>Sinopse</h2>
+                        <p>
+                            Dom Cobb é um ladrão habilidoso na arte da extração de segredos valiosos das
+                            profundezas do subconsciente durante o estado de sonho, tornando-se um alvo cobiçado.
+                        </p>
+                    </section>
+
+                    <section class="grid-informacoes" aria-label="Informações do filme">
+                        <div class="info-item">
+                            <strong>Gênero</strong>
+                            <p>Ficção / Suspense</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Ano</strong>
+                            <p>2010</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Duração</strong>
+                            <p>2h 28min</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Nota</strong>
+                            <p>9.3 / 10</p>
+                        </div>
+                    </section>
+
+                    <section class="secao">
+                        <h2>Elenco principal</h2>
+                        <ul class="lista-elenco">
+                            <li>
+                                <img class="elenco-foto" src="sem-foto.svg" alt="Foto indisponível de Leonardo DiCaprio">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">Leonardo DiCaprio</p>
+                                    <span class="elenco-personagem">Dom Cobb</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="elenco-foto" src="sem-foto.svg" alt="Foto indisponível de Joseph Gordon-Levitt">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">J. Gordon-Levitt</p>
+                                    <span class="elenco-personagem">Arthur</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="elenco-foto" src="sem-foto.svg" alt="Foto indisponível de Elliot Page">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">Elliot Page</p>
+                                    <span class="elenco-personagem">Ariadne</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="elenco-foto" src="sem-foto.svg" alt="Foto indisponível de Tom Hardy">
+                                <div class="elenco-dados">
+                                    <p class="elenco-nome">Tom Hardy</p>
+                                    <span class="elenco-personagem">Eames</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Rodapé único da página -->
+    <footer class="rodape-unificado">
+        <p>CineMatrix &copy; 2026 — Projeto de estudo de HTML e CSS por Vinicio Daileson.</p>
+    </footer>
+
+</body>
+
+</html>

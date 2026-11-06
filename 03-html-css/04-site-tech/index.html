@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--
+  Projeto: TechHight — Loja de Informática
+  Aula: HTML (tabelas, mídia, formulários) + CSS externo.
+  As imagens dos produtos ficam na pasta Img/.
+-->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de loja de informática com produtos, tabela de preços e formulário de cadastro.">
+
+    <title>TechHight - Loja de Informática</title>
+
+    <!-- O CSS foi movido da tag <style> para um arquivo separado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho da loja -->
+    <header id="inicio">
+        <h1>TechHight</h1>
+        <h2>Bem-vindo ao seu futuro</h2>
+        <p>
+            Conectando você ao futuro. Explore nossa linha completa de informática com as melhores
+            condições do mercado. Viva a experiência da tecnologia sem complicações.
+        </p>
+        <nav aria-label="Menu principal">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#cadastro">Cadastro</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Banner principal -->
+        <section class="banner">
+            <img src="Img/tech.jpg" alt="Cidade tecnológica iluminada" width="450">
+        </section>
+
+        <!-- Vitrine de produtos -->
+        <section id="produtos" class="produtos">
+            <div class="produto-secao">
+                <h3>Mouse Gamer</h3>
+                <img src="Img/mouse.jpg" alt="Mouse Gamer RGB" width="400">
+                <h4>Este é o seu melhor amigo no FPS!</h4>
+            </div>
+
+            <div class="produto-secao">
+                <h3>Teclado Gamer</h3>
+                <img src="Img/teclado.jpg" alt="Teclado Mecânico Gamer Iluminado" width="400">
+                <h4>Iluminado para te ajudar nas noites!</h4>
+            </div>
+
+            <div class="produto-secao">
+                <h3>Headset</h3>
+                <img src="Img/headset.jpg" alt="Headset Gamer Preto" width="400">
+                <h4>Para ouvir cada passo do seu jogo.</h4>
+            </div>
+        </section>
+
+        <!-- Tabela de preços e estoque -->
+        <section class="inventario">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Garantia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>R$ 54,90</td>
+                        <td>35</td>
+                        <td>Gamer</td>
+                        <td>12 meses</td>
+                    </tr>
+                    <tr>
+                        <td>Teclado</td>
+                        <td>R$ 89,00</td>
+                        <td>50</td>
+                        <td>Mecânico</td>
+                        <td>12 meses</td>
+                    </tr>
+                    <tr>
+                        <td>Headset</td>
+                        <td>R$ 109,90</td>
+                        <td>50</td>
+                        <td>Intra-auricular</td>
+                        <td>12 meses</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Vídeo e áudio -->
+        <section class="midia">
+            <h3>Conheça um pouco de nossa loja</h3>
+
+            <video width="400" height="360" controls src="video/video.mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+
+            <br><br>
+
+            <audio controls src="testedesom.mp3">
+                Seu navegador não suporta a tag de áudio.
+            </audio>
+        </section>
+
+        <!-- Formulário de cadastro -->
+        <section id="cadastro">
+            <h3>Faça seu cadastro conosco</h3>
+
+            <!-- action="#" apenas para demonstração: não há servidor neste projeto -->
+            <form action="#">
+
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                <br>
+
+                <!-- Correção: o "for" do label agora aponta para o id "email" -->
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
+                <br>
+
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                <br>
+
+                <label for="nasc">Data de Nascimento: </label>
+                <input type="date" name="nasc" id="nasc" required>
+                <br>
+
+                <!-- Turno: os dois radios pertencem ao mesmo grupo "turno" -->
+                <fieldset>
+                    <legend>Turno</legend>
+
+                    <input type="radio" name="turno" id="manha" value="manha">
+                    <label for="manha">Manhã</label>
+                    <br>
+
+                    <input type="radio" name="turno" id="tarde" value="tarde">
+                    <label for="tarde">Tarde</label>
+                </fieldset>
+
+                <label for="cidade">Cidade</label>
+                <select name="cidade" id="cidade">
+                    <option value="">Selecione</option>
+                    <option value="bh">Belo Horizonte</option>
+                    <option value="contagem">Contagem</option>
+                    <option value="betim">Betim</option>
+                </select>
+
+                <br>
+
+                <label for="arquivo">Enviar currículo</label>
+                <input type="file" name="arquivo" id="arquivo">
+
+                <br>
+
+                <label for="cor">Cor preferida</label>
+                <input type="color" name="cor" id="cor">
+
+                <br><br>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé com contato -->
+    <footer>
+        <h3>Nosso contato</h3>
+        <p><strong>Telefone:</strong> (11) 9999-9999</p>
+        <p><strong>E-mail:</strong> contato@techhight.com</p>
+        <p><strong>Endereço:</strong> Rua da Água, Nº 1200</p>
+        <a href="#inicio">Voltar ao topo</a>
+    </footer>
+
+</body>
+
+</html>

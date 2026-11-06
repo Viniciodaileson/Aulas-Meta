@@ -1,4 +1,29 @@
 {
+  "name": "aulas-meta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Exercícios e projetos desenvolvidos nas aulas do curso técnico Meta (JavaScript, Java, HTML e CSS).",
+  "scripts": {
+    "conta-numeros": "node 01-logica-js/01-conta-numeros.js",
+    "impares": "node 01-logica-js/02-impares.js",
+    "inverte-lista": "node 01-logica-js/03-inverte-lista.js",
+    "media-turma": "node 01-logica-js/04-media-turma.js",
+    "menor-numero": "node 01-logica-js/05-menor-numero.js",
+    "contagem-regressiva": "node 01-logica-js/06-contagem-regressiva.js",
+    "soma-vetor": "node 01-logica-js/07-soma-vetor.js",
+    "tabuada": "node 01-logica-js/08-tabuada.js"
+  },
+  "keywords": [
+    "javascript",
+    "java",
+    "html",
+    "css",
+    "exercicios",
+    "logica-de-programacao",
+    "meta"
+  ],
+  "author": "Vinicio Daileson",
+  "license": "MIT",
   "dependencies": {
     "prompt-sync": "^4.2.0"
   }

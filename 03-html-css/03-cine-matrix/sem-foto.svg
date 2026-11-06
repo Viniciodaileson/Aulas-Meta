@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Foto indisponível">
+  <!-- Imagem usada como espaço reservado quando não há foto do ator/pôster -->
+  <rect width="64" height="64" fill="#2b2154"/>
+  <circle cx="32" cy="24" r="11" fill="#6b6390"/>
+  <path d="M10 62c0-12 10-19 22-19s22 7 22 19z" fill="#6b6390"/>
+</svg>
